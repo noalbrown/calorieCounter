@@ -105,7 +105,7 @@ const UICtrl = (function () {
       let html = '';
 
       items.forEach(function (item) {
-        html += `  <li id="" class="collection-item" id="item-${item.id}">
+        html += `  <li class="collection-item" id="item-${item.id}">
         <strong>${item.name}: </strong> <em>${item.calories} Calories</em>
         <a href="#" class="secondary-content">
           <i class="edit-item fa fa-pencil"></i>
@@ -177,7 +177,6 @@ const UICtrl = (function () {
 
     },
     showEditState: function () {
-      UICtrl.clearInput()
       document.querySelector(UISelectors.updateBtn).style.display = 'inline';
       document.querySelector(UISelectors.deleteBtn).style.display = 'inline';
       document.querySelector(UISelectors.backBtn).style.display = 'inline';
